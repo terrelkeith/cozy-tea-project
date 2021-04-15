@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: seashell;
+    list-style-type: none;
+}
+
+/***** nav Section ******/
+
+header {
+    
+    height: 400px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 50px;
+    margin-left: 10px;
+    padding: 20px 10%;
+    justify-content: flex-start;
+}
+
+#nav-bar {
+    padding: 30px 3%;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav li a:hover{
+    color:#E46567;
+    transition: all 0.3s ease 0s;
+}
+
+/***** Main Section ******/
+
+.main-section {
+    background-color: seashell;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+main {
+    background-color: seashell;
+    color: black;
+    width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+/***** footer Section ******/
+
+footer {
+    height: 200px;
+}
+
+h4 {
+    font-size: 35px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+h5 {
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.copy {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+/***** Media Queries ******/
+
+/* Medium Devices (580px-990px) */
+
+@media (min-width: 580px) and (max-width:990px) {  
+
+   /***** nav Section ******/
+    header {
+        background-position: center center;
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%;
+    }
+
+}
+
+/* Small Devices ( 320px-579px) */
+
+@media (max-width: 579px) {
+  
+   /***** nav Section ******/
+    header {
+        background-position: top center;
+        background-size: 500px;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%;
+    }
+
+    #logo {
+        height: 40px;
+    }
+
+
+   /***** footer Section ******/
+
+    h4, h5, .copy {
+        text-align: center;
+    }
+
+    footer {
+        height: 150px;
+    }
+    
+    h4 {
+        font-size: 30px;
+    }
+    
+    h5 {
+        padding: 10px 0;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+}
